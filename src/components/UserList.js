@@ -15,6 +15,7 @@ const UserList = () => {
       <h2>Users List</h2>
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}
+      
       <ul>
         {users.map((user) => (
           <li key={user.id}>
